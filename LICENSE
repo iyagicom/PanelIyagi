@@ -6,32 +6,31 @@ All rights reserved.
 PanelIyagi is proprietary software designed exclusively for
 Ubuntu Linux systems running the GNOME desktop environment.
 
-This software is distributed in executable binary form only.
-The source code is not publicly available.
+The PanelIyagi core service and related binaries are distributed
+in executable form only. The source code of the core components
+is not publicly available.
 
 ------------------------------------------------------------
 
 1. FREE USE
 
-PanelIyagi is provided free of charge.
+PanelIyagi may be used free of charge for personal, commercial,
+educational, governmental, and organizational purposes.
 
-You may use this software for personal, commercial, educational,
-governmental, and organizational purposes without limitation.
-
-No payment, registration, or commercial license is required.
+No payment or commercial license is required.
 
 ------------------------------------------------------------
 
 2. REDISTRIBUTION
 
-You are permitted to redistribute the original, unmodified
-binary package of PanelIyagi.
+You may redistribute the original, unmodified PanelIyagi binary
+packages.
 
-Redistribution may be done via websites, repositories,
-Linux distributions, internal company systems,
-or physical media.
+Redistribution may occur via websites, Linux repositories,
+distributions, internal company systems, or physical media.
 
-You must not modify the software before redistribution.
+Modified versions of the PanelIyagi core binaries may not be
+distributed.
 
 ------------------------------------------------------------
 
@@ -39,40 +38,52 @@ You must not modify the software before redistribution.
 
 You may not:
 
-• Modify or create derivative works of the software  
-• Decompile, disassemble, or reverse engineer the software  
-• Attempt to extract or reconstruct the source code  
+• Modify the proprietary core binaries  
+• Decompile, disassemble, or reverse engineer the core binaries  
+• Attempt to extract or reconstruct source code  
 
 ------------------------------------------------------------
 
 4. PLATFORM SCOPE
 
-PanelIyagi is intended to operate on Ubuntu systems
-using the GNOME desktop environment.
+PanelIyagi is intended to operate on Ubuntu systems using
+the GNOME desktop environment.
 
-Operation on other Linux distributions or desktop environments
-is not guaranteed or supported.
-
-------------------------------------------------------------
-
-5. NO WARRANTY
-
-This software is provided "as is", without warranty of any kind,
-express or implied.
-
-The author shall not be liable for any damages arising from the use
-or inability to use this software.
+Compatibility with other Linux distributions or desktop
+environments is not guaranteed or supported.
 
 ------------------------------------------------------------
 
-6. TRADEMARK AND NAME
+5. OPEN SOURCE COMPONENTS
+
+Certain components of PanelIyagi, including GNOME Shell
+extension scripts (such as extension.js), are distributed
+under open source licenses, including GPL-2.0-or-later.
+
+These open source components are separate works and do not
+affect the proprietary licensing of the PanelIyagi core
+service or binary components.
+
+------------------------------------------------------------
+
+6. TRADEMARK
 
 The name "PanelIyagi" and associated branding may not be used
-to promote modified or third-party software without permission.
+to promote modified or third-party software without prior
+written permission.
 
 ------------------------------------------------------------
 
-7. CONTACT
+7. DISCLAIMER OF WARRANTY
+
+This software is provided "as is", without warranty of any kind.
+
+The author shall not be liable for any damages arising from
+the use or inability to use this software.
+
+------------------------------------------------------------
+
+8. CONTACT
 
 IYAGI INC  
 Email: iyagicom@gmail.com
