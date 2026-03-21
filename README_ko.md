@@ -1,5 +1,3 @@
-# PanelIyagi
-GNOME Shell DBus bridge for PanelIyagi panel
 # PanelIyagi (패널이야기)
 
 Ubuntu GNOME 환경을 위한 **커스텀 Qt6 패널/작업표시줄**입니다.
