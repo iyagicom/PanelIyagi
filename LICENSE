@@ -1,85 +1,91 @@
-IYAGI PANELIYAGI SOFTWARE LICENSE
+IYAGI PANELIYAGI LICENSE
 
 Copyright (c) 2026 IYAGI INC.
 All rights reserved.
 
-PanelIyagi is proprietary software designed exclusively for
-Ubuntu Linux systems running the GNOME desktop environment.
+PanelIyagi is a proprietary panel and taskbar software
+designed exclusively for Ubuntu systems running the GNOME
+desktop environment.
 
-The PanelIyagi core service and related binaries are distributed
-in executable form only. The source code of the core components
-is not publicly available.
-
-------------------------------------------------------------
-
-1. FREE USE
-
-PanelIyagi may be used free of charge for personal, commercial,
-educational, governmental, and organizational purposes.
-
-No payment or commercial license is required.
+The software consists of proprietary core binaries and
+open-source GNOME Shell extension components.
 
 ------------------------------------------------------------
 
-2. REDISTRIBUTION
+1. FREE USAGE
 
-You may redistribute the original, unmodified PanelIyagi binary
-packages.
+PanelIyagi may be used free of charge for personal,
+commercial, educational, governmental, and organizational use.
+
+No payment or commercial agreement is required.
+
+------------------------------------------------------------
+
+2. SOFTWARE ARCHITECTURE AND LICENSING
+
+The PanelIyagi core application, including the Qt6 panel,
+D-Bus engine service, and related executable components,
+is proprietary software distributed in binary form only.
+
+The GNOME Shell extension component is distributed separately
+under its own open-source license (GPL-2.0-or-later).
+
+Use, modification, and redistribution of the extension must
+follow the terms of its open-source license.
+
+The proprietary licensing of the PanelIyagi core is not
+affected by the open-source licensing of the extension.
+
+------------------------------------------------------------
+
+3. REDISTRIBUTION
+
+Redistribution of the original, unmodified PanelIyagi binary
+package is permitted.
 
 Redistribution may occur via websites, Linux repositories,
-distributions, internal company systems, or physical media.
+software mirrors, internal company systems, or physical media.
 
-Modified versions of the PanelIyagi core binaries may not be
-distributed.
+Modified versions of the proprietary core binaries may not
+be redistributed.
 
 ------------------------------------------------------------
 
-3. MODIFICATION AND REVERSE ENGINEERING
+4. RESTRICTIONS
 
 You may not:
 
-• Modify the proprietary core binaries  
-• Decompile, disassemble, or reverse engineer the core binaries  
-• Attempt to extract or reconstruct source code  
+• Modify or create derivative works from proprietary binaries  
+• Reverse engineer, decompile, or disassemble proprietary components  
+• Extract or attempt to reconstruct source code  
+• Redistribute modified proprietary binaries  
 
 ------------------------------------------------------------
 
-4. PLATFORM SCOPE
+5. PLATFORM SCOPE
 
-PanelIyagi is intended to operate on Ubuntu systems using
-the GNOME desktop environment.
+PanelIyagi is intended to operate on Ubuntu Linux systems
+using the GNOME desktop environment.
 
-Compatibility with other Linux distributions or desktop
-environments is not guaranteed or supported.
-
-------------------------------------------------------------
-
-5. OPEN SOURCE COMPONENTS
-
-Certain components of PanelIyagi, including GNOME Shell
-extension scripts (such as extension.js), are distributed
-under open source licenses, including GPL-2.0-or-later.
-
-These open source components are separate works and do not
-affect the proprietary licensing of the PanelIyagi core
-service or binary components.
+Compatibility with other distributions or desktop environments
+is not guaranteed.
 
 ------------------------------------------------------------
 
 6. TRADEMARK
 
 The name "PanelIyagi" and associated branding may not be used
-to promote modified or third-party software without prior
-written permission.
+to promote modified software or third-party distributions
+without written permission.
 
 ------------------------------------------------------------
 
-7. DISCLAIMER OF WARRANTY
+7. DISCLAIMER
 
-This software is provided "as is", without warranty of any kind.
+This software is provided "as is" without warranty of any kind.
 
 The author shall not be liable for any damages arising from
-the use or inability to use this software.
+its use or inability to use.
 
 ------------------------------------------------------------
 
