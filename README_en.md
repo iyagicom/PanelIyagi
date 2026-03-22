@@ -82,21 +82,32 @@ Integrates with the GNOME Shell Extension via D-Bus to provide window tracking, 
 
 ## 🚀 Installation
 
-### 1. Download the latest binary
+### 1. Download
 
-Download the latest release from [GitHub Releases](https://github.com/iyagicom/PanelIyagi/releases) and extract.
+Download `PanelIyagi-vX.X.X-linux-x64.zip` from [GitHub Releases](https://github.com/iyagicom/PanelIyagi/releases) and extract.
 
 ```
-PanelIyagi/
-├── PanelIyagi                          ← executable
-└── extension/paneliyagi@iyagi.com/     ← GNOME Shell extension
+PanelIyagi-vX.X.X-linux-x64.zip
+├── PanelIyagi       ← binary
+├── install.sh       ← installer (binary + extension)
+└── extension/
+    ├── extension.js
+    ├── metadata.json
+    └── install.sh   ← extension-only installer
 ```
 
-### 2. Install the GNOME Shell Extension
+### 2. Run the installer
 
 ```bash
-bash extension/install.sh
+unzip PanelIyagi-vX.X.X-linux-x64.zip
+bash install.sh
+```
 
+This installs the binary to `~/.local/bin/PanelIyagi` and the GNOME Shell extension.
+
+Then enable the extension:
+
+```bash
 gnome-extensions enable paneliyagi@iyagi.com
 ```
 
@@ -105,27 +116,12 @@ Log out and back in if GNOME Shell needs to restart.
 ### 3. Run PanelIyagi
 
 ```bash
-chmod +x PanelIyagi
-./PanelIyagi &
+PanelIyagi &
 ```
 
 ### 4. Register for autostart (recommended)
 
 Right-click the panel → **⚙ Settings** → check **Launch at startup**.
-
-Or manually:
-
-```bash
-mkdir -p ~/.config/autostart
-cat > ~/.config/autostart/paneliyagi.desktop << 'EOF'
-[Desktop Entry]
-Type=Application
-Name=PanelIyagi
-Exec=/path/to/PanelIyagi
-Hidden=false
-X-GNOME-Autostart-enabled=true
-EOF
-```
 
 ---
 
