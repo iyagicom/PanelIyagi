@@ -4,7 +4,8 @@ Copyright (c) 2026 IYAGI INC.
 All rights reserved.
 
 PanelIyagi is proprietary panel and taskbar software
-for Ubuntu Linux systems using the GNOME desktop environment.
+designed specifically for Ubuntu Linux systems
+using the GNOME desktop environment.
 
 ---
 
@@ -18,7 +19,7 @@ governmental, and organizational use.
 
 2. REDISTRIBUTION AND DISTRIBUTION PLATFORMS
 
-Redistribution of the original, unmodified PanelIyagi binaries
+Redistribution of the original PanelIyagi binaries
 is permitted worldwide.
 
 PanelIyagi may be distributed through, including but not limited to:
@@ -46,29 +47,21 @@ are permitted to:
 • Provide dependency handling
 • Include PanelIyagi in bundled software collections
 
-Provided that proprietary binaries remain unmodified.
+Provided that the distributed binaries are kept in their original, unmodified form.
+
+Note: PanelIyagi core is provided as **binary-only software**;
+no source code is included. Modification of the core is not possible.
 
 ---
 
-4. PROPRIETARY CORE RESTRICTIONS
-
-You may not:
-
-• Modify proprietary binaries
-• Reverse engineer, decompile, or disassemble
-• Extract or reconstruct source code
-• Redistribute modified proprietary binaries
-
----
-
-5. OPEN SOURCE COMPONENT
+4. OPEN SOURCE COMPONENT
 
 The GNOME Shell extension component is distributed separately
 under GPL-2.0-or-later and follows its own license terms.
 
 ---
 
-6. TRADEMARK
+5. TRADEMARK
 
 The name “PanelIyagi” may be used to identify the original software.
 
@@ -76,7 +69,7 @@ Modified or unofficial builds must not imply official endorsement.
 
 ---
 
-7. DISCLAIMER
+6. DISCLAIMER
 
 This software is provided "as is" without warranty of any kind.
 
@@ -84,7 +77,7 @@ The author shall not be liable for any damages arising from its use.
 
 ---
 
-8. CONTACT
+7. CONTACT
 
 IYAGI INC
 Email: [iyagicom@gmail.com](mailto:iyagicom@gmail.com)
