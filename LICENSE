@@ -1,83 +1,67 @@
-IYAGI PANELIYAGI LICENSE
+============================================================
+IYAGI INC PanelIyagi License (English) – Executable files only, source code not publicly available
+IYAGI INC 패널이야기 라이선스 (한글) – 실행 파일 전용, 소스 코드 비공개
+============================================================
+
+IYAGI INC PanelIyagi License
 
 Copyright (c) 2026 IYAGI INC.
 All rights reserved.
 
-PanelIyagi is proprietary panel and taskbar software
-designed specifically for Ubuntu Linux systems
-using the GNOME desktop environment.
+PanelIyagi is a proprietary panel and taskbar software
+designed specifically for Ubuntu Linux systems using the GNOME desktop environment.
+The software is distributed only as executable files; the source code is not publicly available.
 
----
+1. Free Usage
+PanelIyagi may be used freely for any purpose, including personal, commercial, educational, governmental, and organizational use.
 
-1. FREE USAGE
+2. GNOME Shell Extension
+GNOME Shell extension included in PanelIyagi is licensed under **GPL-2.0-or-later**.
+Follow the license terms when modifying or redistributing the extension.
 
-PanelIyagi may be used free of charge for any purpose,
-including personal, commercial, educational,
-governmental, and organizational use.
+3. Distribution and Usage
+Anyone may freely install, package, and redistribute PanelIyagi.
+It can be used in any manner, including Linux distribution repositories, software centers, Snap/Flatpak, AppImage, GitHub, internal enterprise systems, ISO images, or physical media.
 
----
+4. Trademarks
+The name "PanelIyagi" may be used to identify the original software.
 
-2. REDISTRIBUTION AND DISTRIBUTION PLATFORMS
+5. Disclaimer
+This software is provided "as-is" without warranty of any kind.
+IYAGI INC shall not be liable for any damages arising from its use.
 
-Redistribution of the original PanelIyagi binaries
-is permitted worldwide.
-
-PanelIyagi may be distributed through, including but not limited to:
-
-• Linux distribution repositories
-• Ubuntu Software Center and GNOME Software
-• Snap Store, Flatpak repositories, AppImage mirrors
-• Personal or commercial websites
-• GitHub Releases and software mirrors
-• Internal enterprise systems
-• Linux distribution ISO images
-• Physical storage media
-
-No additional permission is required.
-
----
-
-3. PACKAGING RIGHTS
-
-Third parties, Linux distributions, and repository maintainers
-are permitted to:
-
-• Repackage PanelIyagi into distribution-specific formats
-• Create installers or integration scripts
-• Provide dependency handling
-• Include PanelIyagi in bundled software collections
-
-Provided that the distributed binaries are kept in their original, unmodified form.
-
-Note: PanelIyagi core is provided as **binary-only software**;
-no source code is included. Modification of the core is not possible.
-
----
-
-4. OPEN SOURCE COMPONENT
-
-The GNOME Shell extension component is distributed separately
-under GPL-2.0-or-later and follows its own license terms.
-
----
-
-5. TRADEMARK
-
-The name “PanelIyagi” may be used to identify the original software.
-
-Modified or unofficial builds must not imply official endorsement.
-
----
-
-6. DISCLAIMER
-
-This software is provided "as is" without warranty of any kind.
-
-The author shall not be liable for any damages arising from its use.
-
----
-
-7. CONTACT
-
+6. Contact
 IYAGI INC
-Email: [iyagicom@gmail.com](mailto:iyagicom@gmail.com)
+Email: iyagicom@gmail.com
+
+============================================================
+IYAGI INC 패널이야기 라이선스 (한글용)
+
+저작권 (c) 2026 IYAGI INC  
+모든 권리 보유.
+
+PanelIyagi는 Ubuntu Linux + GNOME 환경 전용 패널 및 작업 표시줄 소프트웨어입니다.
+소프트웨어는 실행 파일(바이너리) 형태로만 배포되며, 소스 코드는 공개되어 있지 않습니다.
+
+1. 무료 사용
+PanelIyagi는 개인, 상업, 교육, 정부, 단체 등 모든 목적으로 자유롭게 사용할 수 있습니다.
+
+2. GNOME Shell 확장 안내
+PanelIyagi에 포함된 GNOME Shell 확장 기능은 **GPL-2.0-or-later 라이선스**를 따릅니다.
+확장 기능을 수정하거나 재배포할 경우 라이선스 규정을 준수해야 합니다.
+
+3. 배포 및 활용
+누구나 PanelIyagi를 자유롭게 설치, 패키징, 재배포할 수 있습니다.
+Linux 배포판 저장소, 소프트웨어 센터, Snap/Flatpak, AppImage, GitHub, 기업 내부 시스템, ISO 이미지, 물리적 저장 매체 등 원하는 방식으로 활용 가능.
+
+4. 상표
+“PanelIyagi” 이름은 원본 소프트웨어 식별용으로 사용 가능합니다.
+
+5. 면책
+이 소프트웨어는 있는 그대로 제공되며, 어떠한 보증도 제공되지 않습니다.
+사용 중 발생한 손해에 대해 IYAGI INC는 책임지지 않습니다.
+
+6. 문의
+IYAGI INC  
+이메일: iyagicom@gmail.com
+============================================================
