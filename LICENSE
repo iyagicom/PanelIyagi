@@ -3,93 +3,88 @@ IYAGI PANELIYAGI LICENSE
 Copyright (c) 2026 IYAGI INC.
 All rights reserved.
 
-PanelIyagi is a proprietary panel and taskbar software
-designed exclusively for Ubuntu systems running the GNOME
-desktop environment.
+PanelIyagi is proprietary panel and taskbar software
+for Ubuntu Linux systems using the GNOME desktop environment.
 
-The software consists of proprietary core binaries and
-open-source GNOME Shell extension components.
-
-------------------------------------------------------------
+---
 
 1. FREE USAGE
 
-PanelIyagi may be used free of charge for personal,
-commercial, educational, governmental, and organizational use.
+PanelIyagi may be used free of charge for any purpose,
+including personal, commercial, educational,
+governmental, and organizational use.
 
-No payment or commercial agreement is required.
+---
 
-------------------------------------------------------------
+2. REDISTRIBUTION AND DISTRIBUTION PLATFORMS
 
-2. SOFTWARE ARCHITECTURE AND LICENSING
+Redistribution of the original, unmodified PanelIyagi binaries
+is permitted worldwide.
 
-The PanelIyagi core application, including the Qt6 panel,
-D-Bus engine service, and related executable components,
-is proprietary software distributed in binary form only.
+PanelIyagi may be distributed through, including but not limited to:
 
-The GNOME Shell extension component is distributed separately
-under its own open-source license (GPL-2.0-or-later).
+• Linux distribution repositories
+• Ubuntu Software Center and GNOME Software
+• Snap Store, Flatpak repositories, AppImage mirrors
+• Personal or commercial websites
+• GitHub Releases and software mirrors
+• Internal enterprise systems
+• Linux distribution ISO images
+• Physical storage media
 
-Use, modification, and redistribution of the extension must
-follow the terms of its open-source license.
+No additional permission is required.
 
-The proprietary licensing of the PanelIyagi core is not
-affected by the open-source licensing of the extension.
+---
 
-------------------------------------------------------------
+3. PACKAGING RIGHTS
 
-3. REDISTRIBUTION
+Third parties, Linux distributions, and repository maintainers
+are permitted to:
 
-Redistribution of the original, unmodified PanelIyagi binary
-package is permitted.
+• Repackage PanelIyagi into distribution-specific formats
+• Create installers or integration scripts
+• Provide dependency handling
+• Include PanelIyagi in bundled software collections
 
-Redistribution may occur via websites, Linux repositories,
-software mirrors, internal company systems, or physical media.
+Provided that proprietary binaries remain unmodified.
 
-Modified versions of the proprietary core binaries may not
-be redistributed.
+---
 
-------------------------------------------------------------
-
-4. RESTRICTIONS
+4. PROPRIETARY CORE RESTRICTIONS
 
 You may not:
 
-• Modify or create derivative works from proprietary binaries  
-• Reverse engineer, decompile, or disassemble proprietary components  
-• Extract or attempt to reconstruct source code  
-• Redistribute modified proprietary binaries  
+• Modify proprietary binaries
+• Reverse engineer, decompile, or disassemble
+• Extract or reconstruct source code
+• Redistribute modified proprietary binaries
 
-------------------------------------------------------------
+---
 
-5. PLATFORM SCOPE
+5. OPEN SOURCE COMPONENT
 
-PanelIyagi is intended to operate on Ubuntu Linux systems
-using the GNOME desktop environment.
+The GNOME Shell extension component is distributed separately
+under GPL-2.0-or-later and follows its own license terms.
 
-Compatibility with other distributions or desktop environments
-is not guaranteed.
-
-------------------------------------------------------------
+---
 
 6. TRADEMARK
 
-The name "PanelIyagi" and associated branding may not be used
-to promote modified software or third-party distributions
-without written permission.
+The name “PanelIyagi” may be used to identify the original software.
 
-------------------------------------------------------------
+Modified or unofficial builds must not imply official endorsement.
+
+---
 
 7. DISCLAIMER
 
 This software is provided "as is" without warranty of any kind.
 
-The author shall not be liable for any damages arising from
-its use or inability to use.
+The author shall not be liable for any damages arising from its use.
 
-------------------------------------------------------------
+---
 
 8. CONTACT
 
-IYAGI INC  
-Email: iyagicom@gmail.com
+IYAGI INC
+Email: [iyagicom@gmail.com](mailto:iyagicom@gmail.com)
