@@ -27,10 +27,22 @@ Integrates with the GNOME Shell Extension via D-Bus to provide window tracking, 
 * **Minimize / focus toggle** — click to toggle between minimize and focus
 
 ### Calculator
-* **Panel popup** — click 🧮 to open an inline calculator popup instantly
-* **Standalone window** — open a separate calculator window from the popup
-* **History** — result list with automatic thousands-separator formatting
-* **Always on top** — right-click the standalone window to pin it on top
+* **Panel Popup** — Open instant inline calculator via 🧮 button
+* **Separate Window** — Open standalone calculator window with ⧉ button
+* **Expression Evaluation** — Press Enter to calculate and automatically add to history
+* **History Navigation** — Use ↑ / ↓ keys to reuse previous expressions
+* **Continuous Calculation** — Start with an operator to continue from last result (e.g. `+500`)
+* **Result Reuse** — Click a result to copy it into the input field
+* **Quick Copy** — Double-click a result to copy to clipboard
+* **Comments Support** — Anything after `'` is treated as a note (e.g. `1500 ' rent`)
+* **Auto Formatting** — Thousand separators applied while typing and in results
+* **Selection Sum** — Drag select → right-click to sum selected results
+* **History Management** — Delete individual entries or clear all
+* **Persistent History** — محفوظ across app restarts
+* **Paste Support** — `Ctrl + Shift + V`
+* **Always on Top** — Right-click in standalone window to pin on top
+
+> **A practical, history-driven calculator with continuous input, comments, and selection-based summation**
 
 ### System Tray
 * **XEMBED standard** — shows tray icons from Telegram, Discord, ClipIyagi, etc.
