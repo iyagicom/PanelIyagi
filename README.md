@@ -1,6 +1,6 @@
 # PanelIyagi
 
-![PanelIyagi](paneliyagi.png)
+![PanelIyagi](paneliyagi.jpg)
 
 
 A **custom Qt6 panel / taskbar** for Ubuntu GNOME.
