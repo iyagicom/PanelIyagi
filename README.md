@@ -130,8 +130,8 @@ Log out and back in if GNOME Shell needs to restart.
 
 ### 3. Run PanelIyagi
 
-```bash
-PanelIyagi &
+```
+PanelIyagi click
 ```
 
 ### 4. Register for autostart (recommended)
