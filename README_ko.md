@@ -128,8 +128,8 @@ GNOME Shell 재시작이 필요하면 로그아웃 후 재로그인.
 
 ### 3. PanelIyagi 실행
 
-```bash
-PanelIyagi &
+```
+PanelIyagi , fileiyagi에서 클릭
 ```
 
 ### 4. 자동시작 등록 (권장)
