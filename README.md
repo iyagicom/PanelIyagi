@@ -25,6 +25,7 @@ Integrates with the GNOME Shell Extension via D-Bus to provide window tracking, 
 * **Pin apps** — pin frequently used apps to the left area (right-click → pin/unpin)
 * **Active window highlight** — visual indicator on the currently focused window
 * **Minimize / focus toggle** — click to toggle between minimize and focus
+* **Kill process** — right-click a window button → Kill process (SIGKILL via GNOME Shell PID)
 
 ### Calculator
 * **Panel Popup** — Open instant inline calculator via 🧮 button
@@ -53,6 +54,7 @@ Integrates with the GNOME Shell Extension via D-Bus to provide window tracking, 
 * **Notes** — category + page hierarchy, stored in SQLite
 * **Full search** — unified search across calendar notes and memos
 * **Sticky notes** — desktop-pinned note windows, restored after restart
+* **Timed alarms** — set a popup notification at a specific time on any date (alarm dialog)
 
 ### Quick Settings
 * **Volume** — slider, mute toggle, mouse wheel adjustment
@@ -92,6 +94,7 @@ Integrates with the GNOME Shell Extension via D-Bus to provide window tracking, 
 | Panel settings | Right-click panel → 🔧 Panel Settings |
 | Pin an app | Right-click taskbar button → Pin |
 | Adjust volume | Mouse wheel in quick settings |
+| Custom shortcut commands | Shift+F1 ~ Shift+F5 (assign commands in Settings) |
 
 ---
 
