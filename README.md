@@ -26,6 +26,7 @@ Integrates with the GNOME Shell Extension via D-Bus to provide window tracking, 
 * **Active window highlight** — visual indicator on the currently focused window
 * **Minimize / focus toggle** — click to toggle between minimize and focus
 * **Kill process** — right-click a window button → Kill process (SIGKILL via GNOME Shell PID)
+* **Group windows** — combine multiple windows of the same app into one button (per-app setting, numeric badge, hover popup)
 
 ### Calculator
 * **Panel Popup** — Open instant inline calculator via 🧮 button
@@ -93,6 +94,8 @@ Integrates with the GNOME Shell Extension via D-Bus to provide window tracking, 
 | Open calculator | Click the 🧮 button |
 | Panel settings | Right-click panel → 🔧 Panel Settings |
 | Pin an app | Right-click taskbar button → Pin |
+| Group windows | Right-click taskbar button → Group windows |
+| Ungroup windows | Right-click group button → Ungroup windows |
 | Adjust volume | Mouse wheel in quick settings |
 | Custom shortcut commands | Shift+F1 ~ Shift+F5 (assign commands in Settings) |
 
@@ -165,6 +168,7 @@ PanelIyagi (Qt6 + XCB)
 ├── Panel          — Main panel window (_NET_WM_WINDOW_TYPE_DOCK)
 │     ├── AppLauncherPopup — App launcher popup
 │     ├── TaskButton       — Open window button
+│     ├── TaskGroupButton  — Group button (per-app, hover popup + badge)
 │     ├── PinnedButton     — Pinned app button
 │     ├── TrayManager      — XEMBED system tray
 │     ├── IME Label        — Korean / English input mode indicator
