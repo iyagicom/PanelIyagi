@@ -191,10 +191,12 @@ PanelIyagi (Qt6 + XCB)
 
 ## 🖥 Supported Platforms
 
-- Tested: Ubuntu 24.04 / 26.04
+- Tested: Ubuntu 24.04 LTS / Ubuntu 26.04 LTS
+- Desktop: GNOME
+- Qt: 6.2+
 - Packages: .deb / .rpm (zstd)
-- Requirements: Qt 6.2+
-- Desktop: GNOME, Wayland/X11 where supported by the host desktop
+- Development/Test VM: VMIyagi
+- 26.04: GNOME 50 + Wayland가 기본 환경
 
 ---
 
