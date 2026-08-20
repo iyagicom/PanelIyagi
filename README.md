@@ -191,8 +191,10 @@ PanelIyagi (Qt6 + XCB)
 
 ## 🖥 Supported Platforms
 
-* Ubuntu 22.04 / 24.04 (GNOME 46, X11 or Wayland+XCB)
-* Qt 6.2+
+*Tested: Ubuntu 24.04 / 26.04
+*Packages: .deb / .rpm (zstd)
+*Requirements: Qt 6.2+
+*Desktop: GNOME, Wayland/X11 where supported by the host desktop
 
 ---
 
