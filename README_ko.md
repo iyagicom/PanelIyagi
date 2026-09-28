@@ -1,218 +1,61 @@
-# PanelIyagi (패널이야기)
+# 패널이야기 (PanelIyagi)
 
-Ubuntu GNOME 환경을 위한 **커스텀 Qt6 패널/작업표시줄**입니다.
+**우분투 GNOME 에 진짜 작업표시줄을 — 시작 메뉴·작업표시줄·트레이·시계·달력을 한 줄에, 익숙한 그 모습으로.**
 
-GNOME Shell Extension과 D-Bus로 연동하여 창 목록 추적, 앱 실행, 빠른 설정을 하나의 패널에서 제공합니다.
+[English](README.md) · [한국어](README_ko.md)
 
-> **Ubuntu 전용** — X11(XCB) 프로토콜 기반. Wayland 세션에서도 XCB 모드로 강제 실행.
+![PanelIyagi](paneliyagi.jpg)
 
----
+## 왜 패널이야기인가
 
-## ✨ 주요 기능
+- **익숙한 방식의 GNOME.** 시작 메뉴, 열린 창이 모두 보이는 작업표시줄, 시스템 트레이, 시계가 한 패널에 있습니다. 창을 바꾸려고 "현재 활동" 화면을 열 필요가 없습니다.
+- **무엇이든 클릭 한 번.** 분류별 앱, 즐겨찾기, 실시간 검색. 매일 쓰는 앱은 고정해 둡니다.
+- **시계 그 이상.** 시계를 누르면 메모가 달린 달력, 포스트잇, 알람, 이달 할일이 나옵니다.
+- **패널 속 계산기.** 수식을 통째로 입력하고, 기록을 남기고, 주석을 달고, 골라서 합계를 냅니다.
+- **PC 상태가 한눈에.** CPU·메모리 사용량이 패널에 보이고, 음량과 빠른 설정도 클릭 한 번입니다.
 
-### 앱 런처
-* **카테고리별 앱 표시** — freedesktop 카테고리 (인터넷 · 미디어 · 개발 · 게임 등)
-* **즐겨찾기** — 클릭 횟수 기반 자주 쓰는 앱 자동 상단 표시 (최대 20개)
-* **실시간 검색** — 앱 이름 · 일반이름 동시 검색
-* **프로그램 등록** — 카테고리 우클릭 → .desktop 파일 직접 생성
-* **아이콘 자동 탐색** — Yaru 테마 → GNOME 폴백 체인 → /usr/share/pixmaps → 직접 탐색
+## 기능
 
-### 작업표시줄
-* **실행 창 목록** — GNOME Shell Extension과 D-Bus로 창 상태 실시간 동기화
-* **앱 고정** — 자주 쓰는 앱 왼쪽 영역에 고정 (우클릭 → 고정/해제)
-* **활성 창 하이라이트** — 현재 포커스 창 시각적 표시
-* **최소화/포커스 토글** — 버튼 클릭으로 창 최소화 ↔ 포커스 전환
-* **프로세서 죽이기** — 창 버튼 우클릭 → 프로세서 죽이기 (SIGKILL, GNOME Shell PID 기반)
-* **창 묶기** — 동일 앱의 여러 창을 하나의 버튼으로 그룹화 (앱별 개별 설정, 숫자 배지 표시, 호버 팝업)
+### 시작 메뉴·작업표시줄
+- 분류별 앱 메뉴, 즐겨찾기, 실시간 검색, 프로그램 직접 등록
+- 열린 창 목록, 활성 창 표시, 클릭으로 최소화/앞으로
+- 앱 고정, 창 묶기, 멈춘 프로그램 강제 종료
+
+### 트레이·상태
+- 시스템 트레이(XEMBED), CPU/메모리 표시
+- 음량, 빠른 설정
+
+### 시계·달력·메모
+- 날짜별 메모와 시간 알람이 있는 달력
+- 포스트잇, 이달 할일, 잠깐 메모, 전체 검색
 
 ### 계산기
-* **패널 팝업** — 🧮 버튼 클릭 시 인라인 팝업으로 즉시 계산
-* **독립 창** — 새창 버튼(⧉)으로 별도 계산기 창 열기
-* **식 계산** — Enter 입력 시 결과 계산 후 히스토리에 자동 추가
-* **히스토리 탐색** — ↑ / ↓ 화살표로 이전 계산식 재사용
-* **연속 계산** — 연산자로 시작하면 이전 결과에 이어서 계산 (예: `+500`)
-* **결과 재사용** — 결과 클릭 시 입력창으로 값 복사
-* **빠른 복사** — 결과 더블클릭 시 클립보드로 복사
-* **주석 지원** — `'` 이후는 메모로 처리 (예: `1500 ' 월세`)
-* **자동 포맷** — 입력 중 및 결과에 천 단위 콤마 자동 적용
-* **선택 합산** — 드래그 선택 후 우클릭 → 선택된 결과값 합계 계산
-* **히스토리 관리** — 항목 삭제 / 전체 삭제 지원
-* **영구 저장** — 앱 재시작 후에도 계산 기록 유지
-* **붙여넣기** — `Ctrl + Shift + V` 지원
-* **항상 위** — 독립 창 우클릭으로 항상 위 고정 가능
+- 패널 팝업 또는 별도 창의 수식 계산기
+- 기록, 주석, 선택 합계, 항상 위
 
-> **히스토리 기반 연속 계산 + 주석 + 선택 합산까지 지원하는 실사용 중심 계산기**
+## 다운로드
 
-### 시스템 트레이
-* **XEMBED 표준** — Telegram · Discord · ClipIyagi 등 트레이 아이콘 표시
+**[⬇ 최신 버전 받기](https://github.com/iyagicom/PanelIyagi/releases/latest)**
 
-### 시계 + 달력/메모
-* **시계** — 시:분 + 날짜 2줄 표시, 클릭 시 팝업
-* **달력** — 날짜별 메모 (기록 있는 날 하이라이트)
-* **메모** — 카테고리 + 페이지 계층 구조, SQLite 저장
-* **전체 검색** — 달력 메모 + 일반 메모 통합 검색
-* **포스트잇** — 바탕화면에 고정되는 메모 창 (세션 재시작 후 복원)
-* **시간 알림** — 날짜별 특정 시각에 팝업 알림 설정 (알람 다이얼로그)
-
-### 빠른 설정
-* **볼륨** — 슬라이더 · 음소거 · 마우스 휠 조정
-* **Wi-Fi** — 켜기/끄기 · 네트워크 목록 · 비밀번호 입력 후 연결
-* **블루투스** — 켜기/끄기 · 페어링 기기 목록 · 연결/해제
-* **배터리** — 잔량 % + 상태 (충전 중 / 사용 중 / 완충), 배터리 있을 때만 표시
-
-### IME 입력 모드 표시
-* **한/영 실시간 표시** — IBus 입력 모드를 패널에 직접 표시 (한국어 주황색 · 영어 회색)
-* **IBUS 인디케이터** — 새창으로 띄어서 옆에두고 한/영모드를 쉽게 볼수 있다.
-
-### 전원 메뉴
-* 로그아웃 · 다시 시작 · 시스템 종료
-
-### 우클릭 메뉴
-* 아이콘 크기 (24 / 32 / 40 / 48 px) · 아이콘 정렬 (왼쪽 / 가운데)
-* 패널 위치 (상단 / 하단) · 패널 환경설정 다이얼로그
-* 시스템 설정 바로가기 (Wi-Fi · 블루투스 · 디스플레이 · 소리 · 전원 · 마우스 · 프린터)
-* 시스템 감시자
-
-### 확장 인디케이터
-* GNOME 화면녹화 / 화면공유 인디케이터 실시간 표시
-* Desktop Icons 등 Extension 알림 버튼
-
-### 다국어 지원
-* 시스템 언어가 한국어이면 한국어, 그 외에는 영어 UI 자동 선택
-
----
-
-## 🎮 조작
-
-| 동작 | 방법 |
+| 내 시스템 | 받을 파일 |
 |---|---|
-| 앱 런처 열기 | 앱표시 버튼 (⊞) 클릭 또는 hover |
-| 빠른 설정 열기 | 🔊 버튼 클릭 |
-| 달력/메모 열기 | 시계 클릭 |
-| 계산기 열기 | 🧮 버튼 클릭 |
-| 패널 설정 | 패널 우클릭 → 🔧 패널 설정 |
-| 앱 고정 | 작업표시줄 버튼 우클릭 → 고정 |
-| 창 묶기 | 작업표시줄 버튼 우클릭 → 창 묶기 |
-| 창 나누기 | 그룹 버튼 우클릭 → 창 나누기 |
-| 볼륨 조정 | 빠른 설정에서 마우스 휠 |
-| 커스텀 단축키 실행 | Shift+F1 ~ Shift+F5 (설정에서 명령 등록) |
-
----
-
-## 🚀 설치
-
-### 1. 다운로드
-
-[GitHub Releases](https://github.com/iyagicom/PanelIyagi/releases) 에서 `PanelIyagi-vX.X.X-linux-x64.zip` 다운로드 후 압축 해제.
-
-```
-PanelIyagi-vX.X.X-linux-x64.zip
-├── PanelIyagi       ← 실행 파일
-├── install.sh       ← 설치 스크립트 (바이너리 + 확장 동시 설치)
-└── extension/
-    ├── extension.js
-    ├── metadata.json
-    └── install.sh   ← 확장 단독 설치 스크립트
-```
-
-### 2. 설치 스크립트 실행
+| Ubuntu 24.04 · 데비안 | **ubuntu24.04** 가 붙은 `.deb` |
+| Ubuntu 26.04 | **ubuntu26.04** 가 붙은 `.deb` |
+| 페도라 · openSUSE | `.rpm` |
+| 아치 · 만자로 | `.pkg.tar.zst` |
+| 그 밖의 리눅스 | `.AppImage` 또는 `.zip` |
+| GNOME Shell 확장만 | `paneliyagi-extension-*.zip` |
 
 ```bash
-unzip PanelIyagi-vX.X.X-linux-x64.zip
-bash install.sh
+sudo apt install ./paneliyagi_*_amd64.deb    # 우분투 / 데비안
+sudo dnf install ./paneliyagi-*.rpm          # 페도라
+sudo pacman -U paneliyagi-*.pkg.tar.zst      # 아치
 ```
 
-바이너리를 `~/.local/bin/PanelIyagi`에 설치하고 GNOME Shell 확장도 함께 설치합니다.
+패키지가 앱과 GNOME Shell 확장을 함께 설치하고 켭니다. GNOME 이 확장을 읽도록 한 번 로그아웃했다가 다시 로그인하세요.
 
-이후 확장 활성화:
+GNOME 용입니다. KDE Plasma·XFCE·Cinnamon·MATE·LXQt·sway 를 쓴다면 **[TaskIyagi](https://github.com/iyagicom/TaskIyagi)** 를 보세요.
 
-```bash
-gnome-extensions enable paneliyagi@iyagi.com
-```
+## 라이선스
 
-GNOME Shell 재시작이 필요하면 로그아웃 후 재로그인.
-
-### 3. PanelIyagi 실행
-
-```
-PanelIyagi , fileiyagi에서 클릭
-```
-
-### 4. 자동시작 등록 (권장)
-
-패널 우클릭 → **⚙ 설정** → **부팅 시 자동 시작** 체크.
-
----
-
-## ⚙ 설정 파일 위치
-
-| 내용 | 경로 |
-|---|---|
-| 패널 설정 (위치·크기·고정앱) | `~/.config/PanelIyagi/PanelIyagi.conf` |
-| 달력/메모 SQLite DB | `~/.local/share/PanelIyagi/paneliyagi.db` |
-| 포스트잇 위치/크기 | `~/.config/PanelIyagi/stickynotes.ini` |
-| 앱 클릭 횟수 (즐겨찾기) | `~/.config/PanelIyagi/app_clicks.ini` |
-
----
-
-## 🏗 아키텍처
-
-```
-PanelIyagi (Qt6 + XCB)
-│
-├── Engine         — D-Bus 서비스 (org.iyagi.Engine)
-│     └── EngineAdaptor — D-Bus XML 인터페이스
-│
-├── Panel          — 메인 패널 창 (_NET_WM_WINDOW_TYPE_DOCK)
-│     ├── AppLauncherPopup — 앱 런처 팝업
-│     ├── TaskButton       — 실행 창 버튼
-│     ├── TaskGroupButton  — 창 묶기 그룹 버튼 (앱별, 호버 팝업 + 배지)
-│     ├── PinnedButton     — 고정 앱 버튼
-│     ├── TrayManager      — XEMBED 시스템 트레이
-│     ├── IME Label        — 한/영 입력 모드 표시
-│     ├── ClockWidget      — 시계 (클릭 가능)
-│     ├── CalcPopup        — 계산기 팝업
-│     ├── CalcWindow       — 계산기 독립 창
-│     ├── ClockPopup       — 시계 팝업 → NoteWindow
-│     ├── QuickPanel       — 빠른 설정 팝업
-│     └── SettingsDialog   — 패널 환경설정
-│
-├── NoteWindow     — 달력/메모/검색 창
-│     ├── MemoDB   — SQLite 저장소
-│     └── StickyNote — 바탕화면 포스트잇
-│
-└── GNOME Shell Extension (paneliyagi@iyagi.com)
-      └── D-Bus → Engine — 창 이벤트·앱 실행 중개
-```
-
----
-
-## 🖥 지원 플랫폼
-
-- Tested: Ubuntu 24.04 LTS / Ubuntu 26.04 LTS
-- Desktop: GNOME
-- Qt: 6.2+
-- Packages: .deb / .rpm (zstd)
-- Development/Test VM: VMIyagi
-- 26.04: GNOME 50 + Wayland가 기본 환경
-
----
-
-## 👤 개발자
-
-IYAGI INC
-Email: [iyagicom@gmail.com](mailto:iyagicom@gmail.com)
-GitHub: https://github.com/iyagicom
-
----
-
-## 📜 라이선스
-Copyright (c) 2026 IYAGI INC. All rights reserved.
-
-이 소프트웨어는 실행 파일 형태로만 제공되며, 소스 코드는 공개되지 않습니다.
-
-리눅스 버전:
-개인, 상업, 교육, 정부, 단체 등 모든 목적으로 자유롭게 사용, 설치, 패키징 및 재배포할 수 있습니다.
-
-윈도우 버전:
-Microsoft Store를 통해 배포되며, 사용 및 라이선스는 MS Store에서 관리됩니다.
+[라이선스](LICENSE)

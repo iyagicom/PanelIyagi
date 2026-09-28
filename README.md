@@ -1,220 +1,61 @@
 # PanelIyagi
 
+**A real taskbar for Ubuntu GNOME — start menu, taskbar, tray, clock and calendar in one bar, like the desktop you're used to.**
+
+[English](README.md) · [한국어](README_ko.md)
+
 ![PanelIyagi](paneliyagi.jpg)
 
+## Why PanelIyagi?
 
-A **custom Qt6 panel / taskbar** for Ubuntu GNOME.
+- **GNOME, the familiar way.** A start menu, a taskbar with every open window, a system tray and a clock — all in one panel. No Activities overview needed to switch windows.
+- **Everything one click away.** Apps by category, favorites, and live search in the launcher. Pin the apps you use every day.
+- **More than a clock.** Click the clock for a calendar with notes, sticky notes, alarms and a monthly to-do list.
+- **A calculator that lives in the panel.** Type a whole expression, keep history, add comments, sum a selection.
+- **See your PC at a glance.** CPU and RAM usage right in the panel; volume and quick settings a click away.
 
-Integrates with the GNOME Shell Extension via D-Bus to provide window tracking, app launching, and quick settings — all in one panel.
+## Features
 
-> **Ubuntu only** — Built on X11 (XCB) protocols. Runs in XCB mode even on Wayland sessions.
+### Launcher and taskbar
+- App menu with categories, favorites, real-time search, custom entries
+- Open-window list with active-window highlight, click to minimize/raise
+- Pin apps, group windows, kill a hung process
 
----
+### Tray and status
+- System tray (XEMBED), CPU/RAM display
+- Volume and quick settings
 
-## ✨ Features
-
-### App Launcher
-* **Category view** — freedesktop categories (Internet · Media · Development · Games, etc.)
-* **Favorites** — top 20 apps ranked by click count, shown automatically
-* **Real-time search** — searches app name and generic name simultaneously
-* **Register app** — right-click a category → create a .desktop entry directly
-* **Icon auto-discovery** — Yaru theme → GNOME fallback chain → /usr/share/pixmaps → direct scan
-
-### Taskbar
-* **Open window list** — synced in real-time with GNOME Shell Extension via D-Bus
-* **Pin apps** — pin frequently used apps to the left area (right-click → pin/unpin)
-* **Active window highlight** — visual indicator on the currently focused window
-* **Minimize / focus toggle** — click to toggle between minimize and focus
-* **Kill process** — right-click a window button → Kill process (SIGKILL via GNOME Shell PID)
-* **Group windows** — combine multiple windows of the same app into one button (per-app setting, numeric badge, hover popup)
+### Clock, calendar, notes
+- Calendar with per-day notes and timed alarms
+- Sticky notes, monthly tasks, quick notes, full-text search
 
 ### Calculator
-* **Panel Popup** — Open instant inline calculator via 🧮 button
-* **Separate Window** — Open standalone calculator window with ⧉ button
-* **Expression Evaluation** — Press Enter to calculate and automatically add to history
-* **History Navigation** — Use ↑ / ↓ keys to reuse previous expressions
-* **Continuous Calculation** — Start with an operator to continue from last result (e.g. `+500`)
-* **Result Reuse** — Click a result to copy it into the input field
-* **Quick Copy** — Double-click a result to copy to clipboard
-* **Comments Support** — Anything after `'` is treated as a note (e.g. `1500 ' rent`)
-* **Auto Formatting** — Thousand separators applied while typing and in results
-* **Selection Sum** — Drag select → right-click to sum selected results
-* **History Management** — Delete individual entries or clear all
-* **Persistent History** — محفوظ across app restarts
-* **Paste Support** — `Ctrl + Shift + V`
-* **Always on Top** — Right-click in standalone window to pin on top
+- Expression calculator in a panel popup or its own window
+- History, comments, selection sum, always-on-top
 
-> **A practical, history-driven calculator with continuous input, comments, and selection-based summation**
+## Download
 
-### System Tray
-* **XEMBED standard** — shows tray icons from Telegram, Discord, ClipIyagi, etc.
+**[⬇ Latest release](https://github.com/iyagicom/PanelIyagi/releases/latest)**
 
-### Clock + Calendar / Notes
-* **Clock** — two-line display (hh:mm + date), click to open popup
-* **Calendar** — per-date notes, highlights dates that have notes
-* **Notes** — category + page hierarchy, stored in SQLite
-* **Full search** — unified search across calendar notes and memos
-* **Sticky notes** — desktop-pinned note windows, restored after restart
-* **Timed alarms** — set a popup notification at a specific time on any date (alarm dialog)
-
-### Quick Settings
-* **Volume** — slider, mute toggle, mouse wheel adjustment
-* **Wi-Fi** — on/off toggle, network list, password prompt for secured networks
-* **Bluetooth** — on/off toggle, paired device list, connect/disconnect
-* **Battery** — percentage + status (Charging / Discharging / Full), shown only when present
-
-### IME Input Mode Indicator
-* **Korean / English live display** — shows IBus input mode directly on the panel (Korean in orange · English in grey)
-
-### Power Menu
-* Log out · Restart · Shut down
-
-### Right-click Menu
-* Icon size (24 / 32 / 40 / 48 px) · Icon alignment (left / center)
-* Panel position (top / bottom) · Panel preferences dialog
-* System settings shortcuts (Wi-Fi · Bluetooth · Display · Sound · Power · Mouse · Printers)
-* System Monitor
-
-### Extension Indicators
-* Real-time display of GNOME screen recording / screen sharing indicators
-* Notification buttons from Desktop Icons and other extensions
-
-### Multilingual UI
-* Automatically uses Korean when the system language is Korean, English otherwise
-
----
-
-## 🎮 Controls
-
-| Action | How |
+| Your system | File to pick |
 |---|---|
-| Open app launcher | Click or hover the ⊞ button |
-| Open quick settings | Click the 🔊 button |
-| Open calendar / notes | Click the clock |
-| Open calculator | Click the 🧮 button |
-| Panel settings | Right-click panel → 🔧 Panel Settings |
-| Pin an app | Right-click taskbar button → Pin |
-| Group windows | Right-click taskbar button → Group windows |
-| Ungroup windows | Right-click group button → Ungroup windows |
-| Adjust volume | Mouse wheel in quick settings |
-| Custom shortcut commands | Shift+F1 ~ Shift+F5 (assign commands in Settings) |
-
----
-
-## 🚀 Installation
-
-### 1. Download
-
-Download `PanelIyagi-vX.X.X-linux-x64.zip` from [GitHub Releases](https://github.com/iyagicom/PanelIyagi/releases) and extract.
-
-```
-PanelIyagi-vX.X.X-linux-x64.zip
-├── PanelIyagi       ← binary
-├── install.sh       ← installer (binary + extension)
-└── extension/
-    ├── extension.js
-    ├── metadata.json
-    └── install.sh   ← extension-only installer
-```
-
-### 2. Run the installer
+| Ubuntu 24.04 · Debian | `.deb` marked **ubuntu24.04** |
+| Ubuntu 26.04 | `.deb` marked **ubuntu26.04** |
+| Fedora · openSUSE | `.rpm` |
+| Arch · Manjaro | `.pkg.tar.zst` |
+| Any other Linux | `.AppImage` or `.zip` |
+| GNOME Shell extension only | `paneliyagi-extension-*.zip` |
 
 ```bash
-unzip PanelIyagi-vX.X.X-linux-x64.zip
-bash install.sh
+sudo apt install ./paneliyagi_*_amd64.deb    # Ubuntu / Debian
+sudo dnf install ./paneliyagi-*.rpm          # Fedora
+sudo pacman -U paneliyagi-*.pkg.tar.zst      # Arch
 ```
 
-This installs the binary to `~/.local/bin/PanelIyagi` and the GNOME Shell extension.
+The package installs the app and its GNOME Shell extension and turns them on. Log out and back in once so GNOME picks up the extension.
 
-Then enable the extension:
+For GNOME. Using KDE Plasma, XFCE, Cinnamon, MATE, LXQt or sway? See **[TaskIyagi](https://github.com/iyagicom/TaskIyagi)**.
 
-```bash
-gnome-extensions enable paneliyagi@iyagi.com
-```
+## License
 
-Log out and back in if GNOME Shell needs to restart.
-
-### 3. Run PanelIyagi
-
-```
-PanelIyagi click
-```
-
-### 4. Register for autostart (recommended)
-
-Right-click the panel → **⚙ Settings** → check **Launch at startup**.
-
----
-
-## ⚙ Configuration file locations
-
-| Content | Path |
-|---|---|
-| Panel settings (position, size, pinned apps) | `~/.config/PanelIyagi/PanelIyagi.conf` |
-| Calendar / notes SQLite DB | `~/.local/share/PanelIyagi/paneliyagi.db` |
-| Sticky note positions / sizes | `~/.config/PanelIyagi/stickynotes.ini` |
-| App click counts (favorites) | `~/.config/PanelIyagi/app_clicks.ini` |
-
----
-
-## 🏗 Architecture
-
-```
-PanelIyagi (Qt6 + XCB)
-│
-├── Engine         — D-Bus service (org.iyagi.Engine)
-│     └── EngineAdaptor — D-Bus XML interface
-│
-├── Panel          — Main panel window (_NET_WM_WINDOW_TYPE_DOCK)
-│     ├── AppLauncherPopup — App launcher popup
-│     ├── TaskButton       — Open window button
-│     ├── TaskGroupButton  — Group button (per-app, hover popup + badge)
-│     ├── PinnedButton     — Pinned app button
-│     ├── TrayManager      — XEMBED system tray
-│     ├── IME Label        — Korean / English input mode indicator
-│     ├── ClockWidget      — Clickable clock
-│     ├── CalcPopup        — Calculator popup
-│     ├── CalcWindow       — Calculator standalone window
-│     ├── ClockPopup       — Clock popup → NoteWindow
-│     ├── QuickPanel       — Quick settings popup
-│     └── SettingsDialog   — Panel preferences
-│
-├── NoteWindow     — Calendar / notes / search window
-│     ├── MemoDB   — SQLite storage
-│     └── StickyNote — Desktop sticky note
-│
-└── GNOME Shell Extension (paneliyagi@iyagi.com)
-      └── D-Bus → Engine — Bridges window events and app launches
-```
-
----
-
-## 🖥 Supported Platforms
-
-- Tested: Ubuntu 24.04 LTS / Ubuntu 26.04 LTS
-- Desktop: GNOME
-- Qt: 6.2+
-- Packages: .deb / .rpm (zstd)
-- Development/Test VM: VMIyagi
-- 26.04: GNOME 50 + Wayland가 기본 환경
-
----
-
-## 👤 Author
-
-IYAGI INC
-Email: [iyagicom@gmail.com](mailto:iyagicom@gmail.com)
-GitHub: https://github.com/iyagicom
-
----
-
-## 📜 License
-Copyright (c) 2026 IYAGI INC. All rights reserved.
-
-This software is provided as executable files only. Source code is not publicly available.
-
-Linux version:
-You may use, install, package, and redistribute this software freely for any purpose, including personal, commercial, educational, governmental, and organizational use.
-
-Windows version:
-Distributed through the Microsoft Store. Usage and licensing are managed through the MS Store.
+[License](LICENSE)
